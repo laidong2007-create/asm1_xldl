@@ -171,5 +171,3 @@ print(f"Số lượng dòng sau khi xử lý trùng lặp: {len(df)}")
 print("\n--- 5 DÒNG DỮ LIỆU SAU KHI LÀM SẠCH TRÙNG LẶP ---")
 print(df.head())
 
-
-print("Hiển thị biến:",pd)
