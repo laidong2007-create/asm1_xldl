@@ -142,7 +142,7 @@ if 'Loai_nha' in df.columns:
 df = df[df['Tuoi'] < 60] # Chỉ lấy người dưới 60 tuổi
 df = df[df['Thu_nhap_thang'] < 100] # Chỉ lấy thu nhập dưới 100 triệu
 
-print("--- DỮ LIỆU SAU KHI XỬ LÝ KHÔNG HỢP LỆ ---")
+print("--- Dữ liệu sau khi xử lí không hợp lệ")
 print(df.head())
 
 
@@ -168,6 +168,6 @@ df.drop_duplicates(keep='first', inplace=True)
 
 # --- 4. KIỂM TRA LẠI KẾT QUẢ ---
 print(f"Số lượng dòng sau khi xử lý trùng lặp: {len(df)}")
-print("\n--- 5 DÒNG DỮ LIỆU SAU KHI LÀM SẠCH TRÙNG LẶP ---")
+print("--- 5 dòng dữ liệu sau khi làm sạch trùng lặp")
 print(df.head())
 
