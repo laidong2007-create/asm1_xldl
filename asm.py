@@ -22,8 +22,6 @@ print(f"Số lượng dòng trùng lặp: {df.duplicated().sum()}")
 
 
 
-
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -52,9 +50,6 @@ plt.show()
 
 
 
-
-
-
 print("Thống kê số lượng thep khu vực")
 print(df['Khu_vuc'].value_counts())
 
@@ -68,8 +63,6 @@ plt.show()
 df['Do_dai_Ten'] = df['Ho_Ten'].apply(len)
 print("Thống kê độ dài tên")
 print(df[['Ho_Ten', 'Do_dai_Ten']].head())
-
-
 
 
 
@@ -98,8 +91,6 @@ print(df.head())
 
 
 
-
-
 if 'Gia_nha' in df.columns:
     df = df[df['Gia_nha'] > 0]
     
@@ -118,10 +109,6 @@ df = df[df['Thu_nhap_thang'] < 100] # Chỉ lấy thu nhập dưới 100 triệu
 
 print("--- Dữ liệu sau khi xử lí không hợp lệ")
 print(df.head())
-
-
-
-
 
 
 
